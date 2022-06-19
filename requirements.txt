@@ -2,8 +2,8 @@ asgiref==3.5.2
 backports.zoneinfo==0.2.1
 Django==2.1.15
 django-pyodbc-azure==2.1.0.0
-mysqlclient==2.1.0
 pyodbc==4.0.32
 python-dotenv==0.20.0
 pytz==2022.1
 sqlparse==0.4.2
+gunicorn
