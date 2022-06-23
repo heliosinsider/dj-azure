@@ -3,11 +3,12 @@ from django.db import models
 # Create your models here.
 
 class Project(models.Model):
-    organization_id = models.IntegerField(blank=True, null=True)
+ 
+    # organization_id = models.IntegerField(blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
     code = models.CharField(max_length=50, blank=True, null=True)
     project_administrator_id = models.IntegerField(blank=True, null=True)
-    company_id = models.IntegerField(blank=True, null=True)
+    # company_id = models.IntegerField(blank=True, null=True)
     city = models.CharField(max_length=50, blank=True, null=True)
     state = models.CharField(max_length=50, blank=True, null=True)
     country = models.CharField(max_length=50, blank=True, null=True)
@@ -45,7 +46,7 @@ class Project(models.Model):
     comments = models.TextField(blank=True, null=True)
     customer_feedback = models.TextField(blank=True, null=True)
     results = models.TextField(blank=True, null=True)
-    building_id = models.IntegerField(blank=True, null=True)
+    # building_id = models.IntegerField(blank=True, null=True)
 
     class Meta:
         managed = False
@@ -54,7 +55,8 @@ class Project(models.Model):
 
 
 class Building(models.Model):
-    organization_id = models.IntegerField(blank=True, null=True)
+    
+    # organization_id = models.IntegerField(blank=True, null=True)
     name = models.CharField(max_length=50, blank=True, null=True)
     code = models.CharField(max_length=50, blank=True, null=True)
     city = models.CharField(max_length=50, blank=True, null=True)
@@ -128,7 +130,7 @@ class Building(models.Model):
     sl20_alias = models.CharField(max_length=255, blank=True, null=True)
     sl20_list = models.IntegerField(blank=True, null=True)
     zip = models.CharField(max_length=128, blank=True, null=True)
-    guid = models.CharField(max_length=36, blank=True, null=True)
+    # guid = models.CharField(max_length=36, blank=True, null=True)
 
     class Meta:
         managed = False
