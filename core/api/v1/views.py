@@ -12,10 +12,10 @@ from django_filters import rest_framework as filters
 
 
 class ProjectViewsets(viewsets.ModelViewSet):
-    serializers_class = ProjectSerializer
+    serializer_class = ProjectSerializer
     queryset = Project.objects.all()
 
 
 class BuildingViewSets(viewsets.ModelViewSet):
-    serializers_class = BuildingSerializer
+    serializer_class = BuildingSerializer
     queryset = Building.objects.all()
