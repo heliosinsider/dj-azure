@@ -1,10 +1,12 @@
 from django.urls import path
 from rest_framework.routers import DefaultRouter
 
-# app_name = "example"
+from core.api.v1 import views as viewsets
+
 router = DefaultRouter()
 
-# router.register(r'example', viewsets.ExampleViewSets, basename='example')
+router.register(r'project', viewsets.ProjectViewsets, basename='project')
+router.register(r'building', viewsets.BuildingViewSets, basename='building')
  
 urlpatterns = [
    
